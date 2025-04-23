@@ -21,11 +21,19 @@ $(document).ready(function() {
   });
 
 
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('active');
-      const hamburgerIcon = document.querySelector('.hamburger i');
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerIcon = document.querySelector('.hamburger i');
+  
+    navLinks.classList.toggle('active');
+  
+    // Toggle icon between bars and X
+    if (navLinks.classList.contains('active')) {
+      hamburgerIcon.classList.remove('fa-bars');
+      hamburgerIcon.classList.add('fa-x');
+    } else {
       hamburgerIcon.classList.add('fa-bars');
       hamburgerIcon.classList.remove('fa-x');
-    });
-  });
+    }
+  }
+  
