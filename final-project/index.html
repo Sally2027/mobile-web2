@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="portfolio, web designer, web developer">
+  <meta name="author" content="Sally Alazab">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <script src="assets/js/script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="primary" >
+      <div class="logo" onclick="window.location.href='index.html'">
+        <figure>
+          <img src="assets/img/logo.png" alt="Florafly logo" >
+        </figure>
+      </div>
+      <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+             
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="index-form.html" class="request-form">Project Request</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="about">
+      <div class="about-container">
+        <div class="about-left">
+          <figure>
+            <img src="assets/img/2.jpg" alt="picture of me" width="400" height="400">
+          </figure>
+        </div>
+        <div class="about-right">
+          <h1>Hey, I’m Sally!</h1>
+          <div class="sub">
+          <p> Designer and Developer </p>
+          </div>
+          <div class="sub2">
+          <p>The creative mind behind Florafly Design Studio I blend art and technology to craft stunning, functional websites that leave a lasting impression.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="services-container">
+        <div class="services-left">
+          <img src="assets/img/3.jfif" alt="Workspace with flowers and laptop">
+        </div>
+        <div class="services-right">
+          <h1>Our Services</h1>
+          <h2>Web Design & Development</h2>
+          <p>Custom, responsive websites that elevate your brand with seamless <br> functionality and stunning design.</p>
+          <h2>Brand Identity & Logo Design</h2>
+          <p>Distinctive logos and branding elements that establish a strong and <br> professional identity.</p>
+          <h2>Print & Digital Design</h2>
+          <p>Eye-catching menus, billboards, and marketing materials designed to <br> enhance your brand’s presence.</p>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="slider">
+        <div><img src="assets/img/1.png" alt="Central Park Website"></div>
+        <div><img src="assets/img/6.png" alt="Central Park Website Logo"></div>
+        <div><img src="assets/img/5.png" alt="Triple S Gas Station Menue"></div>
+        <div><img src="assets/img/7.png" alt="Triple S Gas Station Logo"></div>
+      </div>
+    </section>
+    <footer>
+      <img src="assets/img/logo.png" alt="Florafly logo" width="80px">
+      <div class="footer-content">
+        <h6>&copy; 2025 | Sally Alazab</h6>
+        <ul class="related-links">
+          <li><a href="https://github.com/Sally2026" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/sally-alazab-16b7b5221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/s__1y2026?igsh=aHZvcmJoa3R4Ynhi&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</main>
+</html>

@@ -1,0 +1,222 @@
+html {
+    box-sizing: border-box;
+  }
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+  }
+    
+    /*  --------------- Utility Classes -----------------  */
+    
+  :root{
+    --main-bg-color: #ffffff;
+    --first-color: #FFB7CB;
+    --second-color: #D45580;
+    --third-color: #FFB7CB;
+    --primary-typo-color: #000000;
+  }
+    
+  .container {
+    position: relative; /* Important! Needed for absolute children like nav */
+    max-width: 500px;
+    margin: 0 auto;
+  
+    overflow-x: visible; /* Just in case! */
+  }
+  
+    
+    /*  ---------------Global Styles-----------------  */
+  body {
+    margin: 0;
+    font-family: "Inknut Antiqua", serif;
+    font-family: "Inter", sans-serif;
+  }
+  
+  header.primary {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    padding: 10px 0;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right:20px;
+  }
+  
+  
+  .primary img{
+    width: 40%;
+    padding: 0;
+    margin-bottom: -110px;
+    margin-top: -30px;
+    margin-left: -20px;
+    display: block;
+  }
+  
+  /* Hamburger style */
+  .hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .nav-links {
+    position: absolute; /* instead of fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh; /* full height */
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1000;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--primary-typo-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: var(--second-color);
+  }
+  
+  .nav-links.active {
+    transform: translateX(0);
+  }
+  
+  /* ------ About Section -------*/
+
+  #about{
+    background: var(--second-color);
+    padding-bottom: 20px;
+  }
+
+  .about-left{
+    padding: 20px 10px;
+  }
+
+  .about-left img{
+    border: 2px solid #000000;
+  }
+
+  .about-right h1{
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: -10px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+  }
+
+  .sub p{
+    margin-left: 70px;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .sub2 p{
+    margin-top: 0;
+    margin-left: 40px;
+    line-height: 1.8;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 40px;
+  }
+
+  /* ------ Services Section -------*/
+
+  .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .services-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .services-left img {
+    width: 100%;
+    max-width: 180px;
+    border: 2px solid var(--primary-typo-color);
+    display: block;
+    margin-bottom:2px;
+    margin-right: 80px;
+    transform: translateX(-50%);
+  }
+  
+  .services-right {
+    background: var(--first-color);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 190px;
+    margin-top: -300px;
+    
+   
+    
+  }
+  
+  .services-right h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 1rem;
+   
+  }
+  
+  .services-right h2 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 0.5rem;
+    
+  }
+  
+  .services-right p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.5rem;
+    line-height: 1.5;
+  
+    
+  }
+
+  /* ------ Media Queries -------*/
+  
+  @media screen and (min-width: 768px) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  @media screen and (min-width:992px){
+  } 
