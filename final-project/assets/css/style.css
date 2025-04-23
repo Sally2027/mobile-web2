@@ -19,10 +19,8 @@ html {
     
   .container {
     position: relative; /* Important! Needed for absolute children like nav */
-    max-width: 420px;
-    margin: 0 auto;
-  
-    overflow-x: visible; /* Just in case! */
+    max-width: 440px;
+    margin: 0 auto;  
   }
   
     
@@ -38,9 +36,8 @@ html {
     flex-direction: column;
     font-family: "Inknut Antiqua", serif;
     font-weight: 400;
-    padding: 10px 0;
-    background:#FFB7CB;
-    
+    margin: 0;
+    padding: 0;
   }
   
   .navbar {
@@ -52,39 +49,44 @@ html {
   
   .primary img{
     width: 40%;
-    padding: 0;
-    margin-bottom: -140px;
+    margin-bottom: -300px;
     margin-top: -40px;
     margin-left: -40px;
     display: block;
   }
-  
-  /* Hamburger style */
-  .hamburger {
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  
-  .nav-links {
-    position: fixed; /* change from absolute to fixed */
-    top: 0;
-    left: 0;
-    width: 420px;
-    height: 100vh;
-    background-color: var(--first-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(100%);
-    z-index: 1000;
-  }
-  
-  
+
+  .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  color: #000000;
+}
+
+.hamburger {
+  margin-top: -5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #FFB7CB;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
   .nav-links a {
     text-decoration: none;
     color: var(--primary-typo-color);
@@ -96,10 +98,7 @@ html {
   .nav-links a:hover {
     color: var(--second-color);
   }
-  
-  .nav-links.active {
-    transform: translateX(0);
-  }
+
 
   .nav-links li {
     list-style: none;
@@ -116,10 +115,11 @@ html {
 
   .about-left{
     padding: 20px 0px;
+    margin: 0 auto;
   }
 
   .about-left img{
-    margin: 0 auto;
+    margin-left: 10px;
     display: block;
     max-width: 340px;
     border: 2px solid #000000;
@@ -160,8 +160,8 @@ html {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .services-left {
@@ -174,7 +174,7 @@ html {
   
   .services-left img {
     width: 100%;
-    max-width: 180px;
+    max-width: 160px;
     border: 2px solid var(--primary-typo-color);
     display: block;
     margin-bottom:2px;
@@ -188,48 +188,292 @@ html {
     padding-right: 15px;
     padding-bottom: 10px;
     border-radius: 20px;
-    margin-left: 190px;
+    margin-left: 170px;
     margin-top: -300px;
-    
-   
-    
   }
   
   .services-right h1 {
     font-family: "Inknut Antiqua", serif;
     font-weight: 700;
     font-size: 1rem;
-   
+    margin-bottom: -10px;
   }
   
   .services-right h2 {
     font-family: "Inknut Antiqua", serif;
     font-weight: 700;
-    font-size: 0.5rem;
-    
+    font-size: 0.7rem;
+    margin-bottom: -10px;
   }
   
   .services-right p {
     font-family: "Inter", sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     line-height: 1.5;
-  
+    padding-bottom: -260px;
+  }
+
+  /* ------ Slider Section -------*/
+
+  #portfolio {
+    text-align: center;
+  }
+   
+  .slider {
+    margin: 0 auto;
     
   }
+  
+  .slider img {
+    padding: 10px;
+    border: 10px solid var(--second-color); 
+  }
+  
+  .slick-prev, .slick-next {
+    top: 40%;
+    z-index: 10;
+  }
+  
+  /* Arrow buttons */
+.slick-prev:before,
+.slick-next:before {
+  color: var(--second-color); /* or any hex like #000, #fff, etc. */
+  font-size: 30px;
+}
+
+/* Optional: Adjust hover state */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: var(--second-color);
+}
+
+/* ------ footer -------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:-10px;
+}
+
+footer img {
+  width: 30%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* adds space between h6 and icons */
+}
+
+
+.footer-content h6 {
+  margin: 0;
+  font-size: 0.5rem;
+}
+
+.related-links {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.related-links a {
+  color: var(--second-color);
+  font-size: 1.2rem;
+}
+
 
   /* ------ Media Queries -------*/
   
-  @media screen and (min-width: 768px) {
-  
-  
-  
-  
-  
-  
-  
-  
-  
+/* Tablet (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  header.primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-family: "Inknut Antiqua", serif;
   }
-  
-  @media screen and (min-width:992px){
-  } 
+
+  header.primary img {
+    max-width: 120px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .about-left img {
+    border: 30px solid var(--main-bg-color);
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .about-right h1 {
+    font-size: 2.5rem;
+    margin-left: 100px;
+  }
+
+  .about-right p {
+    font-size: 1.2rem;
+    margin-left: 100px;
+  }
+
+  .services-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+
+  .services-left img {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 0;
+    transform: translateX(0);
+  }
+
+  .services-right {
+    background: var(--first-color);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0;
+    max-width: 700px;
+  }
+
+  .services-right h1 {
+    font-size: 2rem;
+  }
+
+  .services-right p {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+
+  .slider {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-content h6 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .related-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop (min-width: 992px) */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    gap: 60px;
+    padding: 60px 0;
+  }
+
+  .about-left img {
+    max-width: 400px;
+  }
+
+  .about-right h1 {
+    font-size: 3rem;
+  }
+
+  .about-right p {
+    font-size: 1.3rem;
+    margin-left: 150px;
+  }
+
+  .services-container {
+    gap: 50px;
+    padding: 60px 0;
+  }
+
+  .services-left img {
+    max-width: 400px;
+  }
+
+  .services-right {
+    max-width: 800px;
+    padding: 60px;
+  }
+
+  .services-right h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-right p {
+    font-size: 1.2rem;
+  }
+
+  .slider {
+    width: 70%;
+    margin: 4rem auto;
+  }
+
+  footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer-content h6 {
+    font-size: 1.4rem;
+  }
+
+  .related-links {
+    gap: 2rem;
+  }
+}
