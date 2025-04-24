@@ -18,7 +18,7 @@ html {
   }
     
   .container {
-    position: relative; /* Important! Needed for absolute children like nav */
+    position: relative; 
     max-width: 440px;
     margin: 0 auto;  
   }
@@ -96,7 +96,7 @@ html {
   }
   
   .nav-links a:hover {
-    color: var(--second-color);
+    color: var(--main-bg-color);
   }
 
 
@@ -104,13 +104,30 @@ html {
     list-style: none;
     text-align: center;
   }
+
+  .request-form{
+    background: var(--second-color);
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+  }
+  
+  .request-form:hover{
+    color: var(--main-bg-color);
+    border: 2px solid #000000;
+  }
   
   
   /* ------ About Section -------*/
 
   #about{
-    background: var(--second-color);
     padding-bottom: 20px;
+  }
+
+  .about-container{
+    background: var(--second-color);
   }
 
   .about-left{
@@ -150,6 +167,7 @@ html {
     font-weight: 400;
     font-size: 1rem;
     margin-right: 40px;
+    padding-bottom: 20px;
   }
 
   /* ------ Services Section -------*/
@@ -262,7 +280,7 @@ footer img {
 .footer-content {
   display: flex;
   align-items: center;
-  gap: 1rem; /* adds space between h6 and icons */
+  gap: 1rem; 
 }
 
 
@@ -286,194 +304,68 @@ footer img {
 
 
   /* ------ Media Queries -------*/
-  
-/* Tablet (min-width: 768px) */
 @media screen and (min-width: 768px) {
-  header.primary {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    font-family: "Inknut Antiqua", serif;
-  }
-
-  header.primary img {
-    max-width: 120px;
-    margin-left: 20px;
-  }
-
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .about-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 40px 0;
-  }
-
-  .about-left img {
-    border: 30px solid var(--main-bg-color);
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .about-right h1 {
-    font-size: 2.5rem;
-    margin-left: 100px;
-  }
-
-  .about-right p {
-    font-size: 1.2rem;
-    margin-left: 100px;
-  }
-
-  .services-container {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px 0;
-  }
-
-  .services-left img {
-    width: 100%;
-    max-width: 350px;
-    margin-right: 0;
-    transform: translateX(0);
-  }
-
-  .services-right {
-    background: var(--first-color);
-    padding: 40px;
-    border-radius: 20px;
-    margin: 0;
-    max-width: 700px;
-  }
-
-  .services-right h1 {
-    font-size: 2rem;
-  }
-
-  .services-right p {
-    font-size: 1.1rem;
-    padding-left: 20px;
-  }
-
-  .slider {
-    width: 80%;
-    margin: 2rem auto;
-  }
-
-  footer {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .footer-content h6 {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-
-  .related-links {
-    display: flex;
-    gap: 1.5rem;
-  }
-}
-
-/* Desktop (min-width: 992px) */
-@media screen and (min-width: 992px) {
   .container {
-    max-width: 1200px;
+    position: relative; 
+    max-width: 768px;
     margin: 0 auto;
   }
 
+  .hamburger{
+    margin-top: -5px;
+  }
+
+  .primary img{
+    margin-bottom: -150px;
+    width: 25%;
+  }
+
   .about-container {
-    gap: 60px;
-    padding: 60px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #f3cfd9;
+  }
+  
+  .about-left {
+    flex: 1;
+    display: flex;
+    margin-top: 40px;
+    margin-right: -20px;
+    justify-content: center;
+    padding-right: 70px;
+    background: var(--second-color);
   }
 
   .about-left img {
-    max-width: 400px;
+    display: block;
+    margin-right: -180px;
+    border: 30px solid var(--main-bg-color);
   }
-
+  
+  .about-right {
+    flex: 2; 
+  }
+  
   .about-right h1 {
-    font-size: 3rem;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 140px;
+    margin-bottom: -20px;
   }
-
+  
   .about-right p {
-    font-size: 1.3rem;
-    margin-left: 150px;
-  }
-
-  .services-container {
-    gap: 50px;
-    padding: 60px 0;
-  }
-
-  .services-left img {
-    max-width: 400px;
-  }
-
-  .services-right {
-    max-width: 800px;
-    padding: 60px;
-  }
-
-  .services-right h1 {
-    font-size: 2.5rem;
-  }
-
-  .services-right p {
+    font-family:  "Inter", sans-serif;
     font-size: 1.2rem;
+    margin-left: 150px;
+    line-height: 2;
   }
 
-  .slider {
-    width: 70%;
-    margin: 4rem auto;
-  }
 
-  footer {
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .footer-content h6 {
-    font-size: 1.4rem;
-  }
-
-  .related-links {
-    gap: 2rem;
-  }
 }
+
+@media screen and (min-width: 992px) {}
+  
