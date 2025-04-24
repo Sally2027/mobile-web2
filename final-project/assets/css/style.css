@@ -320,21 +320,27 @@ footer img {
     width: 25%;
   }
 
+  #about{
+    padding-top: -90px;
+  }
+
   .about-container {
     display: flex;
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
     background: #f3cfd9;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   
   .about-left {
     flex: 1;
     display: flex;
     margin-top: 40px;
-    margin-right: -20px;
+    margin-left: -20px;
     justify-content: center;
-    padding-right: 70px;
+    padding-right: 90px;
     background: var(--second-color);
   }
 
@@ -345,24 +351,80 @@ footer img {
   }
   
   .about-right {
-    flex: 2; 
+    flex: 5; 
   }
   
   .about-right h1 {
     font-family: "Inknut Antiqua", serif;
     font-weight: 700;
     font-size: 2rem;
-    margin-left: 100px;
-    margin-top: 140px;
+    margin-left: 0px;
+    margin-top: 10px;
     margin-bottom: -20px;
   }
   
-  .about-right p {
-    font-family:  "Inter", sans-serif;
-    font-size: 1.2rem;
-    margin-left: 150px;
-    line-height: 2;
+  .sub2 p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    line-height: 3;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: -10px;
   }
+
+  .services-container{
+    margin-top: 60px;
+  }
+
+  .services-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .services-left img {
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid var(--primary-typo-color);
+    display: block;
+    margin-bottom: -80px;
+    margin-right: 240px;
+    transform: translateX(-50%);
+  }
+  
+  .services-right {
+    background: var(--first-color);
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-right: -0px;
+   
+  }
+  
+  .services-right h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+  }
+  
+  .services-right h2 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: -10px;
+  }
+  
+  .services-right p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-bottom: -260px;
+  }
+
 
 
 }
