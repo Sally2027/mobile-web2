@@ -233,37 +233,29 @@ html {
 
   /* ------ Slider Section -------*/
 
-  #portfolio {
-    text-align: center;
-  }
+#portfolio {
+  text-align: center;
+}
    
-  .slider {
-    margin: 0 auto;
-    
-  }
+.slider {
+  max-width: 100%;
+  margin: 0 auto;
+}
   
-  .slider img {
-    padding: 10px;
-    border: 10px solid var(--second-color); 
-  }
-  
-  .slick-prev, .slick-next {
-    top: 40%;
-    z-index: 10;
-  }
-  
-  /* Arrow buttons */
-.slick-prev:before,
-.slick-next:before {
-  color: var(--second-color); /* or any hex like #000, #fff, etc. */
-  font-size: 30px;
+
+.slider img {
+  padding: 10px;
+  border: 10px solid var(--second-color); 
 }
 
-/* Optional: Adjust hover state */
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  color: var(--second-color);
+.slider .slick-slide {
+  margin: 0 5px;
 }
+
+.slider .slick-list {
+  margin: 0 -10px;
+}
+
 
 /* ------ footer -------*/
 footer {
@@ -362,9 +354,13 @@ footer img {
     margin-top: 10px;
     margin-bottom: -20px;
   }
+
+  .sub{
+    margin-top: 10px;
+  }
   
   .sub2 p {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 0;
     line-height: 3;
@@ -400,7 +396,7 @@ footer img {
     background: var(--first-color);
     border-radius: 20px;
     margin-left: 250px;
-    margin-right: -0px;
+    margin-right: 10px;
    
   }
   
