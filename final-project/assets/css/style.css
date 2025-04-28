@@ -19,7 +19,8 @@ html {
     
 .container {
   max-width: 440px;
-  margin: 0 auto;  
+  margin: 0;  
+  padding: 0;
 }
   
     
@@ -232,65 +233,60 @@ header.primary {
 
   /* ------ Slider Section -------*/
 
-#portfolio {
-  text-align: center;
-}
-   
-.slider {
-  max-width: 100%;
-  margin: 0 auto;
-}
   
 
 .slider img {
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
+  margin-bottom: 10px;
   border: 10px solid var(--second-color); 
 }
 
-.slider .slick-slide {
-  margin: 0 5px;
-}
-
-.slider .slick-list {
-  margin: 0 -10px;
-}
 
 
 /* ------ footer -------*/
 footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top:-10px;
+ 
+  gap: 10px;
 }
 
 footer img {
-  width: 30%;
+  width: 130px;
+  height: auto;
 }
 
 .footer-content {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 20px;
 }
 
-
 .footer-content h6 {
-  margin: 0;
-  font-size: 0.5rem;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  
 }
 
 .related-links {
-  list-style: none;
   display: flex;
-  gap: 0.75rem;
+  gap: 10px;
+  list-style: none;
   padding: 0;
   margin-right: 10px;
 }
 
 .related-links a {
   color: var(--second-color);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.related-links a:hover {
+  color: var(--primary-typo-color);
 }
 
 
@@ -299,7 +295,8 @@ footer img {
   .container {
     width: 100%;
     max-width: none;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
 
   .hamburger{
@@ -421,11 +418,12 @@ footer img {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
     .container {
       width: 100%;
       max-width: none;
-      margin: 20px auto;
+      margin: 0;
+      padding: 0;
     }
   
     header.primary {
@@ -438,6 +436,7 @@ footer img {
     header.primary img {
       width: 100%;
       max-width: 140px;
+      margin-top: -18px;
       margin-bottom: -40px;
       margin-left: -15px;
     }
