@@ -233,12 +233,10 @@ header.primary {
 
   /* ------ Slider Section -------*/
 
-  
-
 .slider img {
   align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   padding: 10px;
   margin-bottom: 10px;
   border: 10px solid var(--second-color); 
