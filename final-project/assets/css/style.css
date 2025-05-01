@@ -381,8 +381,6 @@ footer img {
     grid-column: 4/12;
     background: var(--first-color);
     border-radius: 20px;
-    
-   
   }
   
   .services-right h1 {
@@ -506,27 +504,23 @@ footer img {
       line-height: 2;
     }
 
-    .services-container {
-      margin: 20px;
-    }
-
     .services-left {
-      grid-column: 1/2;
+      grid-column: 1/4;
       margin-top: 40px;
-      padding: 20px;
     }
     
     .services-left img {
       width: 100%;
+      max-width: 500px;
       border: 2px solid var(--primary-typo-color);
       display: block;
       margin-bottom: 40px;
-      margin-right: 500px;
+      margin-left: 200px;
       transform: translateX(-50%);
     }
     
     .services-right {
-      grid-column: 2/12;
+      grid-column: 4/12;
       background: var(--first-color);
       padding-left: 60px;
       padding-bottom: 60px;
